@@ -132,3 +132,57 @@ footer {
     bottom: 0;
     width: 100%;
 }
+    /* Modal (Lightbox) Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    max-width: 800px;  /* Set a maximum width for the image */
+    max-height: 70vh;  /* Set a maximum height to avoid being too zoomed in */
+    object-fit: contain;  /* Ensures the image scales nicely without stretching */
+    border-radius: 10px;
+}
+
+.modal-description {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: red;
+}
