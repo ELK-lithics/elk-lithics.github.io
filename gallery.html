@@ -1,160 +1,27 @@
+<!-- gallery.html - Gallery Page -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Gallery</title>
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Gallery</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Navigation Menu */
-        nav {
-            background-color: #333;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav ul li a:hover {
-            background-color: #3498db;
-        }
-
-        /* Gallery Section */
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        /* Modal (lightbox) */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
-        }
-
-        .modal img {
-            max-width: 90%;
-            max-height: 80%;
-        }
-
-        .modal.active {
-            display: flex;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-container">
-        <div class="gallery-item">
-            <img src="image1.jpg" alt="Gallery Image 1" onclick="openModal(this)">
-        </div>
-        <div class="gallery-item">
-            <img src="image2.jpg" alt="Gallery Image 2" onclick="openModal(this)">
-        </div>
-        <div class="gallery-item">
-            <img src="image3.jpg" alt="Gallery Image 3" onclick="openModal(this)">
-        </div>
-        <div class="gallery-item">
-            <img src="image4.jpg" alt="Gallery Image 4" onclick="openModal(this)">
-        </div>
-        <!-- Add more gallery items as needed -->
-    </section>
-
-    <!-- Modal for lightbox -->
-    <div class="modal" id="modal">
-        <img id="modal-image" src="" alt="Large Image">
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 My Interactive Gallery. All rights reserved.</p>
-    </footer>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Image Gallery</h2>
+        <p>Coming soon...</p>
+    </main>
+</body>
+</html>
