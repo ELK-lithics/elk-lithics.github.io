@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f0f0f0;
-            padding-bottom: 100px; /* Creates space between body and footer */
+            padding-bottom: 100px;
         }
 
         header {
@@ -45,9 +45,9 @@
         }
 
         main {
-            padding: 40px; /* Adds space below header */
+            padding: 40px;
             text-align: center;
-            margin-top: 20px; /* Pushes content down to avoid overlap */
+            margin-top: 20px;
         }
 
         footer {
@@ -55,20 +55,22 @@
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 100px; /* Space between content and footer */
+            margin-top: 100px;
         }
+
         .container {
             display: flex;
-            align-items: center; /* Aligns text and image vertically */
-            justify-content: center; /* Centers content */
-            gap: 20px; /* Adds space between image and text */
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
             max-width: 80%;
             margin: auto;
             padding: 20px;
         }
 
         .container img {
-            max-width: 40%; /* Ensures image is responsive */
+            max-width: 40%;
             height: auto;
             border-radius: 10px;
         }
@@ -77,6 +79,19 @@
             max-width: 50%;
             font-size: 18px;
             line-height: 1.5;
+        }
+
+        /* Responsive: Stack image and text on smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container img,
+            .text {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -95,30 +110,31 @@
     </header>
 
     <main>
-
-         <!-- Blog Entry 1 -->
+        <!-- Blog Entry 1 -->
         <article class="blog-entry">
-        <div class="container">
-        <img src="IMG_20240607_175800.jpg" alt="10">
-        <div class="text">
-            <h2>June 7th 2024</h2>
-            <p>After having become an official  volunteer with the Saxony-Ahnalt State Department of Archaeology I went on a fieldwalk around the city of Naumburg in Central Germany.</p>
-            <p>Despite being on the hunt for Mesolithic and Upper Palaeolithic material, this beautiful Neolithic arrowhead caught my eye. This leaf shape, although common in the UK- typically associated with the Early Neolithic- it is a very rare form in Germany and dates, most likely, to the Middle Neolithic.</p>
+            <div class="container">
+                <img src="IMG_20240607_175800.jpg" alt="10">
+                <div class="text">
+                    <h2>June 7th 2024</h2>
+                    <p>After having become an official volunteer with the Saxony-Anhalt State Department of Archaeology, I went on a fieldwalk around the city of Naumburg in Central Germany.</p>
+                    <p>Despite being on the hunt for Mesolithic and Upper Palaeolithic material, this beautiful Neolithic arrowhead caught my eye. This leaf shape, although common in the UK—typically associated with the Early Neolithic—is a very rare form in Germany and dates, most likely, to the Middle Neolithic.</p>
+                </div>
+            </div>
         </article>
         
-          <!-- Blog Entry 2 -->
+        <!-- Blog Entry 2 -->
         <article class="blog-entry">
-        <div class="container">
-        <div class="text">
-        <img src="IMG_20240321_123312_029.jpg" alt="11">
-            <h2>March 21st 2024</h2>
-            <p>I visited Guildford Museum today to look at some finds found by various hobby collectors and antiquarians within my research area.</p>
-            <p>Amongst the collections was this group of unprovenanced Barbed and Tanged arrowheads collected by hobbyist Henry Albert Mangles in the 1890s.</p>
-            <p>Unfortunately, as was common amongst contemporaries, very little is provenanced. At most one can expect a parish name or county to have been applied with ink on the artefacts, which only 33% of Mangle's collection has.</p>
-            <p>Regardless, it was a really insightful trip with the collection containing many fascinating lithics and several provenanced to my research area.</p>
+            <div class="container">
+                <img src="IMG_20240321_123312_029.jpg" alt="11">
+                <div class="text">
+                    <h2>March 21st 2024</h2>
+                    <p>I visited Guildford Museum today to look at some finds discovered by various hobby collectors and antiquarians within my research area.</p>
+                    <p>Amongst the collections was this group of unprovenanced Barbed and Tanged arrowheads collected by hobbyist Henry Albert Mangles in the 1890s.</p>
+                    <p>Unfortunately, as was common amongst contemporaries, very little is provenanced. At most, one can expect a parish name or county to have been applied with ink on the artefacts, which only 33% of Mangles' collection has.</p>
+                    <p>Regardless, it was a really insightful trip, with the collection containing many fascinating lithics and several provenanced to my research area.</p>
+                </div>
+            </div>
         </article>
-        </div>
-    </div>
     </main>
 
     <!-- Footer -->
