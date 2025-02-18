@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>About Me</h1>
-         <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -22,10 +18,6 @@
             color: white;
             padding: 20px;
             text-align: center;
-        }
-
-        header h1 {
-            margin-bottom: 20px;
         }
 
         nav ul {
@@ -53,30 +45,25 @@
         }
 
         main {
-            padding: 20px;
+            padding: 40px; /* Adds space below header */
             text-align: center;
+            margin-top: 20px; /* Pushes content down to avoid overlap */
         }
 
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color: rgba(0, 0, 0, 0.6);
+        footer {
+            background-color: #333;
             color: white;
-            padding: 10px;
-            border-radius: 50%;
-            font-size: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .close-btn:hover {
-            background-color: red;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px; /* Space between content and footer */
         }
     </style>
 </head>
+<body>
+
     <header>
-            <nav>
+        <h1>About Me</h1>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
@@ -86,7 +73,7 @@
             </ul>
         </nav>
     </header>
-<body>
+
     <main>
         <h2>Latest Posts</h2>
         <article>
@@ -94,8 +81,8 @@
             <p>This is an example blog post.</p>
         </article>
     </main>
-     
-        <!-- Footer -->
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 E La O Kirchner. All rights reserved.</p>
     </footer>
