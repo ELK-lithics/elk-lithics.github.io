@@ -57,11 +57,31 @@
             padding: 20px;
             margin-top: 50px; /* Space between content and footer */
         }
+        .container {
+            display: flex;
+            align-items: center; /* Aligns text and image vertically */
+            justify-content: center; /* Centers content */
+            gap: 20px; /* Adds space between image and text */
+            max-width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 40%; /* Ensures image is responsive */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            max-width: 50%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
-
-    <header>
+   <header>
         <h1>About Me</h1>
         <nav>
             <ul>
@@ -75,11 +95,13 @@
     </header>
 
     <main>
-        <h2>Latest Posts</h2>
-        <article>
-            <h3>Thank you for visiting my website. My name is Manni La O Kirchner</h3>
-            <p>This is an example blog post.</p>
-        </article>
+        <div class="container">
+        <img src="IMG_20240321_123312_029.jpg" alt="A descriptive image">
+        <div class="text">
+            <h2>Image Title</h2>
+            <p>This is some descriptive text about the image. The text sits neatly next to the image using flexbox.</p>
+        </div>
+    </div>
     </main>
 
     <!-- Footer -->
