@@ -79,3 +79,39 @@
         .gallery-item:hover img {
             transform: scale(1.1);
         }
+
+      <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-container">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Gallery Image 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Gallery Image 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Gallery Image 3" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="image4.jpg" alt="Gallery Image 4" onclick="openModal(this)">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </section>
+
+    <!-- Modal for lightbox -->
+    <div class="modal" id="modal">
+        <img id="modal-image" src="" alt="Large Image">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Interactive Gallery. All rights reserved.</p>
+    </footer>
