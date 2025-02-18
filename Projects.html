@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
-      <style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    <style>
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -81,19 +83,36 @@
             line-height: 1.5;
         }
 
-        /* Responsive: Stack image and text on smaller screens */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
                 text-align: center;
             }
-
             .container img,
             .text {
                 max-width: 100%;
             }
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
         }
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+        /* Video Styling */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 600px;
+            height: 340px;
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -115,22 +134,15 @@
         <!-- Blog Entry 1 -->
         <article class="blog-entry">
             <div class="container">
-                <img src="IMG_20240930_170557.jpg" alt="10">
+                <img src="IMG_20240930_170557.jpg" alt="Archaeology">
                 <div class="text">
-                    <h2><large>Between Arle and Wey. The Neolithic of the East Hampshire plateau</large></h2>
+                    <h2>Between Arle and Wey: The Neolithic of the East Hampshire Plateau</h2>
                     <p>Having grown up in the Hampshire countryside, I have been fascinated by the rich archaeology and history that surrounds me for as long as I can remember.</p>
-                    <p> </p>
-                    <p>This lifelong fascination has evolved into my current "research niche"- The local Neolithic archaeology. Much of Hampshire has remained unscathed from the trowel and spade searching for Neolithic archaeology, as very few sites from this period are known of in the area.</p>
-                    <p> </p>
-                    <p>But this "gap" is anything but a reality. As the county's ideal location between the countless Neolithic sites in Sussex, Wiltshire and Dorset show- there is no reason why there shouldn't be the same wealth in Hampshire.</p>
-                    <p> </p>
-                    <p>In this already overlooked county lies the region of East Hampshire, an equally underestimated region (in almost all periods of archaeology) despite the wealth of evidence scattered over ploughed fields, or covered in dust in Victorian collections.</p>
-                    <p> </p>
-                    <p>My research, beginning with one site situated in the middle of this overlooked region, aims to fill in this false negative. As I have found out by looking through countless collections, hidden in warehouses, garages and shelves this corner of Hampshire is anything but devoid of Neolithic archaeology.</p>
-                    <p> </p>
-                    <p>The image left, an Early Bronze Age axe-hammer made from Camptonite (likely sourced from near Nuneaton) shows this best. Hidden in the Hampshire Cultural Collections this axe, one of hundreds like it, demonstrate the immense prehistoric presence throughout the county that has barely begun to be understood</p>
-                    <p> </p>
-                    <p>Put simply. I want to endevour to fill the "gap" between Stone Henge and Blackpatch</p>
+                    <p>This lifelong fascination has evolved into my current research niche—The local Neolithic archaeology.</p>
+                    <p>Much of Hampshire has remained unscathed from the trowel and spade, with very few sites from this period known in the area.</p>
+                    <p>My research, beginning with one site situated in the middle of this overlooked region, aims to fill in this false negative.</p>
+                    <p>The image on the left, an Early Bronze Age axe-hammer made from Camptonite (likely sourced from near Nuneaton), shows this best.</p>
+                    <p>Put simply, I want to endeavor to fill the "gap" between Stone Henge and Blackpatch.</p>
                 </div>
             </div>
         </article>
@@ -138,21 +150,22 @@
         <!-- Blog Entry 2 -->
         <article class="blog-entry">
             <div class="container">
-                <img src="IMG_20240321_123312_029.jpg" alt="11">
+                <img src="IMG_20240321_123312_029.jpg" alt="Ropley History">
                 <div class="text">
-                    <h2><large>Ropley History Network and Archive</large></h2>
-                    <p>In addition to my own research into the county's Neolithic archaeology, I am also a member of the steering group of the RHN&A- a local history group based in Ropley, Hampshire which researches the archaeology, heritage and history of the region.</p>
-                    <p>We are primarily an archive and actively digitise local records, artefacts and memorabilia.</p>
-                    <p>I have held various talks on behalf of the society ranging from prehistoric archaeology to recent history and place name research.</p>
-                    <p> </p>
-                    <p>Here are some of my talks:</p>
+                    <h2>Ropley History Network and Archive</h2>
+                    <p>In addition to my research into the county's Neolithic archaeology, I am a member of the steering group of the RHN&A—a local history group based in Ropley, Hampshire, researching the archaeology, heritage, and history of the region.</p>
+                    <p>We are primarily an archive, actively digitizing local records, artefacts, and memorabilia.</p>
+                    <p>I have held various talks on behalf of the society, ranging from prehistoric archaeology to recent history and place name research.</p>
 
-                  <iframe width="600" height="340" src="https://youtu.be/0smM2AVwC1s?si=iuHE453YI6FvNx2d" frameborder="0" allowfullscreen></iframe>
-                  <iframe width="600" height="340" src="https://youtu.be/NbnVvtIds_g?si=zys4u8SyZlolG93C" frameborder="0" allowfullscreen></iframe>
-                  <iframe width="600" height="340" src="https://youtu.be/VvouOlzD7k4?si=7IAH5C974yK2pEPV" frameborder="0" allowfullscreen></iframe>
+                    <h3>Here are some of my talks:</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/0smM2AVwC1s" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/NbnVvtIds_g" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/VvouOlzD7k4" frameborder="0" allowfullscreen></iframe>
+                    </div>
 
-                    <a href="https://www.ropleyhistory.org.uk/">You can visit our website and archive here</a>
-
+                    <p><a href="https://www.ropleyhistory.org.uk/">Visit our website and archive here</a></p>
+                </div>
             </div>
         </article>
     </main>
