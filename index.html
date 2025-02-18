@@ -132,6 +132,27 @@
         .close-btn:hover {
             background-color: red;
         }
+            .container {
+            display: flex;
+            align-items: center; /* Aligns text and image vertically */
+            justify-content: center; /* Centers content */
+            gap: 20px; /* Adds space between image and text */
+            max-width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 40%; /* Ensures image is responsive */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            max-width: 50%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -148,13 +169,13 @@
         </nav>
     </header>
     <main>
-        <p>Lithic specialist with a focus on the Neolithic.</p>
-
-    <!-- Image with Subtitle -->
-    <figure>
-        <img src="WhatsApp Image 2025-02-15 at 18.41.54_6646c973.jpg" alt="Fieldwalking in winter 2025" width="500">
-        <figcaption>Fieldwalking in sunny Hampshire, February 2025</figcaption>
-    </figure>
+        <div class="container">
+        <img src="WhatsApp Image 2025-02-15 at 18.41.54_6646c973.jpg" alt="Me fieldwalking in winter 2025">
+        <div class="text">
+            <h2>Thank you for visiting my website</h2>
+            <p>My name is Emmanuel La O Kirchner, I am an archaeologist specialising in lithics with a focus on the Neolithic of Britain.</p>
+        </div>
+    </div>
 
     <!-- Blog Section -->
     <section class="blog">
