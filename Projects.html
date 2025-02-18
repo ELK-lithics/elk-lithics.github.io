@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            padding-bottom: 100px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3498db;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            max-width: 50%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Responsive: Stack image and text on smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container img,
+            .text {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Blog Entry 1 -->
+        <article class="blog-entry">
+            <div class="container">
+                <img src="IMG_20240930_170557.jpg" alt="10">
+                <div class="text">
+                    <h2>Between Arle and Wey. The Neolithic of the East Hampshire plateau</h2>
+                    <p>Having grown up in the Hampshire countryside, I have been fascinated by the rich archaeology and history that surrounds me for as long as I can remember.</p>
+                    <p> </p>
+                    <p>This lifelong fascination has evolved into my current "research niche"- The local Neolithic archaeology. Much of Hampshire has remained unscathed from the trowel and spade searching for Neolithic archaeology, as very few sites from this period are known of in the area.</p>
+                    <p> </p>
+                    <p>But this "gap" is anything but a reality. As the county's ideal location between the countless Neolithic sites in Sussex, Wiltshire and Dorset show- there is no reason why there shouldn't be the same wealth in Hampshire.</p>
+                    <p> </p>
+                    <p>In this already overlooked county lies the region of East Hampshire, an equally underestimated region (in almost all periods of archaeology) despite the wealth of evidence scattered over ploughed fields, or covered in dust in Victorian collections.</p>
+                    <p> </p>
+                    <p>My research, beginning with one site situated in the middle of this overlooked region, aims to fill in this false negative. As I have found out by looking through countless collections, hidden in warehouses, garages and shelves this corner of Hampshire is anything but devoid of Neolithic archaeology.</p>
+                    <p> </p>
+                    <p>The image left, an Early Bronze Age axe-hammer made from Camptonite (likely sourced from near Nuneaton) shows this best. Hidden in the Hampshire Cultural Collections this axe, one of hundreds like it, demonstrate the immense prehistoric presence throughout the county that has barely begun to be understood</p>
+                    <p> </p>
+                    <p>Put simply. I want to endevour to fill the "gap" between Stone Henge and Blackpatch</p>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Blog Entry 2 -->
+        <article class="blog-entry">
+            <div class="container">
+                <img src="IMG_20240321_123312_029.jpg" alt="11">
+                <div class="text">
+                    <h2>Ropley History Network and Archive</h2>
+                    <p>In addition to my own research into the county's Neolithic archaeology, I am also a member of the steering group of the RHN&A- a local history group based in Ropley, Hampshire which researches the archaeology, heritage and history of the region.</p>
+                    <p>I have held various talks on behalf of the society ranging from prehistoric archaeology to recent history and place name research.</p>
+                    <p> </p>
+                    <p>Here are some of my videos:</p>
+
+                  <iframe width="600" height="340" src="https://youtu.be/0smM2AVwC1s?si=iuHE453YI6FvNx2d" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="600" height="340" src="https://youtu.be/NbnVvtIds_g?si=zys4u8SyZlolG93C" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="600" height="340" src="https://youtu.be/VvouOlzD7k4?si=7IAH5C974yK2pEPV" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 E La O Kirchner. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
