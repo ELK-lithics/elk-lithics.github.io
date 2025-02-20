@@ -82,6 +82,19 @@
             line-height: 1.5;
         }
 
+        .image-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+
         /* Responsive: Stack image and text on smaller screens */
         @media (max-width: 768px) {
             .container {
@@ -93,11 +106,15 @@
             .text {
                 max-width: 100%;
             }
+
+            .image-container img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-   <header>
+    <header>
         <h1>Blog</h1>
         <nav>
             <ul>
@@ -112,7 +129,6 @@
     </header>
 
     <main>
-      
         <!-- Blog Entry 1 -->
         <article class="blog-entry">
             <div class="container">
@@ -124,20 +140,7 @@
                 </div>
             </div>
         </article>
-                <!-- Blog Entry -->
-        <article class="blog-entry">
-            <div class="container">
-                <img src="IMG_20240402_143328_621.jpg" alt="Photo of the conference hall">
-                <img src="IMG_20240405_134651_528.jpg" alt="Photo of the Ilsen cave, beneath Ranis castle">
-                <div class="text">
-                    <h2>April 2nd-5th, 2024</h2>
-                    <p>In early April a friend of mine and I visited the Hugo Obermaier conference; which had the topic of "Alpha and Omega, the emergence and dissapearance of Middle Palaeolithic lifeways". The conference was held a few clicks south of our university, in the very picturesque Weimar.</p>
-                    <p>The conference focussed primarily on Middle and Upper Palaeolothic archaeology from around the globe which was very eye-opening as I had minimal interaction with archaeology from these periods prior.</p>
-                    <p>It was a very enjoyable experience and gave us the possibility to connect with fellow researchers and students.</p>
-                    <p>A highlight of the conference was a day-long excursion visiting several Upper Palaeolithic cave sites around Thuringia. My favourite of these was the Ilsen cave, situated literally underneath the medieval Ranis castle. The cave's size is immense, something that can't be conveyed with the photo (left) taken with my phone.</p>
-                </div>
-            </div>
-        </article>
+
         <!-- Blog Entry 2 -->
         <article class="blog-entry">
             <div class="container">
@@ -148,6 +151,23 @@
                     <p>Among the collections was this group of unprovenanced Barbed and Tanged arrowheads, collected by hobbyist Henry Albert Mangles in the 1890s.</p>
                     <p>Unfortunately, as was common at the time, very little is provenanced. At most, one can expect a parish name or county to have been inked onto the artefacts—only 33% of Mangles' collection includes such information.</p>
                     <p>Regardless, it was a really insightful trip, and the collection contained many fascinating lithics, some of which were provenanced to my research area.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Blog Entry 3 -->
+        <article class="blog-entry">
+            <div class="container">
+                <div class="image-container">
+                    <img src="IMG_20240402_143328_621.jpg" alt="Photo of the conference hall">
+                    <img src="IMG_20240405_134651_528.jpg" alt="Photo of the Ilsen cave, beneath Ranis castle">
+                </div>
+                <div class="text">
+                    <h2>April 2nd-5th, 2024</h2>
+                    <p>In early April, a friend of mine and I visited the Hugo Obermaier conference, which had the topic of "Alpha and Omega, the emergence and disappearance of Middle Palaeolithic lifeways". The conference was held a few clicks south of our university, in the very picturesque Weimar.</p>
+                    <p>The conference focused primarily on Middle and Upper Palaeolithic archaeology from around the globe, which was very eye-opening as I had minimal interaction with archaeology from these periods prior.</p>
+                    <p>It was a very enjoyable experience and gave us the possibility to connect with fellow researchers and students.</p>
+                    <p>A highlight of the conference was a day-long excursion visiting several Upper Palaeolithic cave sites around Thuringia. My favourite of these was the Ilsen cave, situated literally underneath the medieval Ranis castle. The cave's size is immense, something that can't be conveyed with the photo (left) taken with my phone.</p>
                 </div>
             </div>
         </article>
