@@ -81,6 +81,7 @@
             max-width: 50%;
             font-size: 18px;
             line-height: 1.5;
+            text-align: left;
         }
 
         /* Responsive Design */
@@ -95,7 +96,7 @@
             }
             .video-container iframe {
                 width: 100%;
-                height: auto;
+                aspect-ratio: 16/9; /* Maintains correct video ratio */
             }
         }
 
@@ -112,17 +113,18 @@
             width: 600px;
             height: 340px;
             max-width: 100%;
+            aspect-ratio: 16/9;
         }
     </style>
 </head>
 <body>
-   <header>
+    <header>
         <h1>Blog</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="Projects.html">My Projects</a></li>
+                <li><a href="projects.html">My Projects</a></li> <!-- Fixed capitalization -->
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -134,8 +136,8 @@
         <!-- Blog Entry 1 -->
         <article class="blog-entry">
             <div class="container">
-                <img src="IMG_20240930_170557.jpg" alt="Archaeological site in East Hampshire">
-                <div class="text">
+                <img src="IMG_20240930_170557.jpg" alt="Archaeological site in East Hampshire featuring Neolithic artifacts">
+                <section class="text">
                     <h2>Between Arle and Wey: The Neolithic of the East Hampshire Plateau</h2>
                     <p>Having grown up in the Hampshire countryside, I have been fascinated by the rich archaeology and history that surrounds me for as long as I can remember.</p>
                     <p>This lifelong fascination has evolved into my current research niche—The local Neolithic archaeology.</p>
@@ -143,15 +145,15 @@
                     <p>My research, beginning with one site situated in the middle of this overlooked region, aims to fill in this false negative.</p>
                     <p>The image on the left, an Early Bronze Age axe-hammer made from Camptonite (likely sourced from near Nuneaton), shows this best.</p>
                     <p>Put simply, I want to endeavor to fill the "gap" between Stonehenge and Blackpatch.</p>
-                </div>
+                </section>
             </div>
         </article>
         
         <!-- Blog Entry 2 -->
         <article class="blog-entry">
             <div class="container">
-                <img src="IMG_20240321_123312_029.jpg" alt="Ropley History Group Event">
-                <div class="text">
+                <img src="IMG_20240321_123312_029.jpg" alt="Ropley History Group Event featuring historical archives">
+                <section class="text">
                     <h2>Ropley History Network and Archive</h2>
                     <p>In addition to my research into the county's Neolithic archaeology, I am a member of the steering group of the RHN&A—a local history group based in Ropley, Hampshire, researching the archaeology, heritage, and history of the region.</p>
                     <p>We are primarily an archive, actively digitizing local records, artefacts, and memorabilia.</p>
@@ -165,7 +167,7 @@
                     </div>
 
                     <p><a href="https://www.ropleyhistory.org.uk/" target="_blank" rel="noopener noreferrer">Visit our website and archive here</a></p>
-                </div>
+                </section>
             </div>
         </article>
     </main>
@@ -174,6 +176,5 @@
     <footer>
         <p>&copy; 2025 E La O Kirchner. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
