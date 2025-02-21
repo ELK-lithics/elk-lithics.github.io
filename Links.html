@@ -4,41 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
+            background-color: #f0f0f0;
+            padding-bottom: 100px; /* Creates space between body and footer */
         }
-        .container {
-            width: 50%;
-            margin: 50px auto;
-            background: white;
+
+        header {
+            background-color: #333;
+            color: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
             text-align: center;
         }
-        ul {
+
+        nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        li {
-            margin: 10px 0;
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
         }
-        a {
+
+        nav ul li a {
+            color: white;
             text-decoration: none;
             font-size: 18px;
-            color: #007BFF;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
+
+        nav ul li a:hover {
+            background-color: #3498db;
+        }
+
+        main {
+            padding: 40px; /* Adds space below header */
+            text-align: center;
+            margin-top: 20px; /* Pushes content down to avoid overlap */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px; /* Space between content and footer */
+        }
+
+        .container {
+            display: flex;
+            align-items: center; /* Aligns text and image vertically */
+            justify-content: center; /* Centers content */
+            gap: 20px; /* Adds space between image and text */
+            max-width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 40%; /* Ensures image is responsive */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            max-width: 50%;
+            font-size: 18px;
+            line-height: 1.5;
         }
     </style>
+</head>
+<body>
+   <header>
+        <h1>Links To Related Pages</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Links.html">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
 </head>
 <body>
     <div class="container">
