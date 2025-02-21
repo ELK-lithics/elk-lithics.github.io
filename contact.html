@@ -136,21 +136,10 @@
         <h2>Send me a message!</h2>
         <!-- Contact Form Box -->
         <div class="contact-box">
-            <form action="https://formsubmit.co/https://elk-lithics.github.io/" method="POST">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <!-- Hidden input field for CSRF token to protect against bots (optional but recommended) -->
-    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-    <input type="hidden" name="_captcha" value="false"> <!-- Disable captcha if needed -->
-
-    <button type="submit">Send Message</button>
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
 </form>
         </div>
     </main>
