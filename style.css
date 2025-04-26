@@ -149,3 +149,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo-container img {
+  max-width: 150px;
+  height: auto;
+}
